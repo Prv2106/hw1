@@ -1,0 +1,21 @@
+#favorites-background{
+    background-image:url(../images/background2.jpg);
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.empty-favorites{
+    height: 800px;
+}
+
+section[data-section="favorites"]{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    line-height:1.7;
+    opacity:0.9;
+}

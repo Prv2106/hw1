@@ -1,0 +1,21 @@
+#album-background{
+    background-image:url(../images/background2.jpg);
+    background-position: center;
+    background-repeat: repeat;
+}
+
+
+
+section[data-section="album"]{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    line-height:1.7;
+    opacity:0.9;
+    padding-bottom: 100px;
+}
+

@@ -1,0 +1,159 @@
+:root{
+    --red:#E50914;
+    --deep_red: #e5091482;
+}   
+
+body{
+    background-color: black;
+    color:white;
+    font-family: 'Nunito', sans-serif;
+}
+#heading{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin:20px;
+    height:30px;
+}
+
+div[data-content]{
+    width: 50px;  
+}
+
+[data-section]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+[data-section="title"] h1{
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+#main-view{
+    background-image:url(../images/background1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;  
+    padding-bottom: 400px;  
+    
+}
+
+section{
+    padding: 50px;
+    padding-bottom:0;
+    margin:50px; 
+    width:35%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(6, 6, 6, 0.6);
+    font-family: 'Nunito', sans-serif;
+    line-height: normal;
+    text-align: center;
+}
+
+section div{
+    margin-bottom: 10px;
+    font-size: 1.9rem;
+    line-height: normal;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px 0;
+    opacity: 0.9;
+}
+
+input{
+    width:200px;
+    border-radius: 4px;
+    background: whitesmoke;
+    border: 1px solid white;
+    padding:10px;
+}
+
+#submit{
+    border-radius: 4px;
+    border:0;
+    height: 50px;
+    width: 70px;
+    padding:5px;
+    margin: auto;
+    cursor: pointer;
+    background-color: var(--red);
+    color:white;
+}
+#submit:hover{
+    background-color: var(--deep_red);
+}
+
+
+.error{
+    color: var(--red);
+    font-size: 0.95rem;
+    width: 195px;
+}
+
+.hidden{
+    display: none;
+}
+
+.border-error{
+    border-color:var(--red);
+}
+
+a{
+    color: aqua;
+}
+
+@media(max-width:850px){
+    section div{
+        font-size: 1rem;
+    }
+
+    label{
+        font-size: 0.6rem;
+    }
+
+    a,p{
+        font-size: 1rem;
+    }
+
+    .error{
+        font-size: 0.5rem;
+    }
+}
+
+@media(max-width:390px){
+    input{
+        width:80px;
+        height: 25px;
+    }
+
+    .error{
+        width:80px;
+    }
+    
+}

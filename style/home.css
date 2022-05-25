@@ -1,0 +1,131 @@
+[data-section="search"] [data-content]{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+[data-section="search"] [data-content]:hover{
+    cursor: pointer;
+}
+
+#search{
+    margin-left: 5px;
+}
+
+#close{
+    margin-bottom: 16px;
+}
+
+[data-content="close"] img:hover, [data-content="search"] img:hover,[data-content ="favorites"] img:hover{
+    opacity: 0.8;
+}
+
+
+header{
+    background-image:url(../images/header.jpg);
+    height: 500px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+header h1{
+    text-align: center;
+    color:whitesmoke;
+    font-style: oblique;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 10px;
+    z-index: 1;    
+}
+
+#overlay{
+    width: 100%;
+    height:100%;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+article[data-section="movies"]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    line-height:1.7;
+}
+
+
+article[data-section]{
+    text-align: center;
+    margin-bottom: 30px;
+    line-height:1.7;
+}
+
+
+
+
+#album-view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+[data-section="search-mobile"]{
+    display: none;
+}
+
+@media(max-width:1000px){
+    #links{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:900px){
+    #links a{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 910px){
+
+    .mobile{
+        display: none;
+    }
+
+    article[data-section="search-mobile"]{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top:25px;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        line-height:1.7;
+    }
+    
+    #submit-mobile{
+        background-color:var(--red);
+        padding: 10px;
+        border-radius: 20px;
+        font-size: 1rem;
+        margin-top: 10px;
+        color: white;
+        cursor:pointer;
+    }
+
+    
+}
+
+
+
+

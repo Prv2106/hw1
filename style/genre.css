@@ -1,0 +1,21 @@
+#genre-background{
+    background-image:url(../images/background2.jpg);
+    background-position: center;
+    background-repeat: repeat;
+}
+
+section[data-section="genre"]{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    line-height:1.7;
+    opacity:0.9;
+    padding-bottom: 100px;
+}
+
+#genre{
+    border-radius: 4px;
+}
