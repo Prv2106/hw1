@@ -4,7 +4,7 @@ cognome VARCHAR(255),
 username VARCHAR(255) PRIMARY KEY,
 email  VARCHAR(255) UNIQUE,
 pwd VARCHAR (255)
-);
+)Engine = InnoDB;
 
 
 create table favorites(
@@ -18,7 +18,7 @@ create table favorites(
     index idx_username (username),
     FOREIGN KEY (username) REFERENCES users(username), 
     UNIQUE(movie_id,username)
-);
+)Engine = InnoDB;
 
 
 create table chat(
@@ -32,4 +32,4 @@ create table chat(
     updated BOOLEAN,
     index idx_username (username),
     FOREIGN KEY (username) REFERENCES users(username)
-);
+)Engine = InnoDB;
