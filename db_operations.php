@@ -8,7 +8,7 @@ if(!isset($_SESSION['username'])){
 switch($_GET['type']) {
     case 'add_favorites': addFavorites(); break;
     case 'remove_favorites': removeFavorites(); break;
-    case 'show_favorites': showFvaorites(); break;
+    case 'show_favorites': showFavorites(); break;
     case 'add_msg': addMsg(); break;
     case 'remove_msg': removeMsg(); break;
     case 'update_msg': updateMsg(); break;
@@ -92,7 +92,7 @@ function removeFavorites(){
 }
 
 
-function showFvaorites(){
+function showFavorites(){
     header('Content-Type: application/json');
 
     $conn = mysqli_connect("localhost","root","","homework")or die(mysqli_connect_error());
