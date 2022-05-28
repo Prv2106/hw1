@@ -102,9 +102,7 @@ function onJsonPopularMovies(json){
     button_container.classList.add('button-container');
     section.appendChild(button_container);
 
-    if(page_count >= 100){
-        page_count=1;
-    }
+ 
     if(page_count>1){
         let back_button = document.createElement('button');
         back_button.textContent = "pagina precedente";
@@ -143,6 +141,9 @@ function previousPageRequest(){
 
 function nextPageRequest(){
     ++page_count;
+    if(page_count >= 100){
+        page_count=1;
+    }
     fetch("api_request.php?type=popular" + "&page=" + page_count).then(onResponse).then(onJsonPopularMovies);
 }
 
