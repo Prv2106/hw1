@@ -26,6 +26,9 @@ if((!empty($_POST["username"]))&&(!empty($_POST["password"]))){
             mysqli_close($conn);
             exit;
         }
+        else{
+        $error = true;
+        }
     }
     else{
         $error = true;
