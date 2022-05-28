@@ -102,6 +102,9 @@ function onJsonPopularMovies(json){
     button_container.classList.add('button-container');
     section.appendChild(button_container);
 
+    if(page_count >= 100){
+        page_count=0;
+    }
     if(page_count>1){
         let back_button = document.createElement('button');
         back_button.textContent = "pagina precedente";
