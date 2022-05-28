@@ -199,12 +199,15 @@ form.search input{
         margin-top: 30px;
     }
     form{
-        display: flex;
         font-size: 1rem;
     }
     
     input{
         margin: 2px;
         padding:2px;
+    }
+
+    #search{
+        width:100px;
     }
 }
