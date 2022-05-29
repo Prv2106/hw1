@@ -415,7 +415,9 @@ function onAddMsgResponse(response){
 function updateMsg(event){
     event.preventDefault();
     let input= document.querySelector('#input-text').value;
-    fetch("db_operations.php?type=update_msg&msg_id=" + encodeURIComponent(id) +"&text_msg=" + encodeURIComponent(input)).then(onResponse).then(showCurrentMsg);
+    if(input.length <1200){
+        fetch("db_operations.php?type=update_msg&msg_id=" + encodeURIComponent(id) +"&text_msg=" + encodeURIComponent(input)).then(onResponse).then(showCurrentMsg);
+    }
 }
 
 let id;
