@@ -75,11 +75,11 @@
                     <h1>Cerca film</h1> 
                     <span>Ciao 
                         <?php
-                                $query_name = "SELECT nome from users where BINARY username = '".$username."' ";
+                                $query_name = "SELECT name from users where BINARY username = '".$username."' ";
                                 $name = mysqli_query($conn,$query_name);
                                 if(mysqli_num_rows($name) > 0){
                                     $row = mysqli_fetch_assoc($name);
-                                    echo $row['nome'];
+                                    echo $row['name'];
                             }
                         ?>
                         , consiglia agli altri utenti di Top Movies qualche film da guardare!
