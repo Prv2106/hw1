@@ -418,6 +418,9 @@ function updateMsg(event){
     if(input.length <1200){
         fetch("db_operations.php?type=update_msg&msg_id=" + encodeURIComponent(id) +"&text_msg=" + encodeURIComponent(input)).then(onResponse).then(showCurrentMsg);
     }
+    else{
+        form_msg.removeEventListener('submit',updateMsg);
+    }
 }
 
 let id;
