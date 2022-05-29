@@ -90,12 +90,14 @@ function addMessage(event){
     const movie_id = shared_movie.movie_id;
     const text = document.querySelector('#input-text').value;
 
-    fetch("db_operations.php?type=add_msg" + 
-    '&img='  +  encodeURIComponent(img) + 
-    "&title=" + encodeURIComponent(title) + 
-    "&text=" + encodeURIComponent(text) +
-    "&movie_id=" + encodeURIComponent(movie_id) 
-    ).then(onAddMsgResponse).then(onAddMsgJson);   
+    if(text.length < 1200){
+        fetch("db_operations.php?type=add_msg" + 
+        '&img='  +  encodeURIComponent(img) + 
+        "&title=" + encodeURIComponent(title) + 
+        "&text=" + encodeURIComponent(text) +
+        "&movie_id=" + encodeURIComponent(movie_id) 
+        ).then(onAddMsgResponse).then(onAddMsgJson);   
+    } 
 
 }
 
