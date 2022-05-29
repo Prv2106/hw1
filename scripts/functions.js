@@ -97,6 +97,10 @@ function addMessage(event){
         "&text=" + encodeURIComponent(text) +
         "&movie_id=" + encodeURIComponent(movie_id) 
         ).then(onAddMsgResponse).then(onAddMsgJson);   
+    }
+    else{
+        let share =document.querySelector('em.shared');
+        share.classList.remove('shared');
     } 
 
 }
