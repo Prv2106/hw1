@@ -1,9 +1,4 @@
 <?php
-session_start();
-if(!isset($_SESSION['username'])){
-    header("Location: login.php");
-    exit;
-}
 header('Content-Type: application/json');
 
 $conn = mysqli_connect("localhost","root","","homework")or die(mysqli_connect_error());
