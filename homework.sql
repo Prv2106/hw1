@@ -29,7 +29,7 @@ create table chat(
     img VARCHAR(255),
     title VARCHAR(255),
     movie_id INTEGER,
-    text_msg VARCHAR(255),
+    text_msg TEXT,
     msg_id INTEGER  PRIMARY KEY AUTO_INCREMENT ,
     updated BOOLEAN,
     index idx_username (username),
