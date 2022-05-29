@@ -1,8 +1,8 @@
 CREATE DATABASE homework;
 
 create table users(
-nome VARCHAR(255),
-cognome VARCHAR(255),
+name VARCHAR(255),
+surname VARCHAR(255),
 username VARCHAR(255) PRIMARY KEY,
 email  VARCHAR(255) UNIQUE,
 pwd VARCHAR (255)
